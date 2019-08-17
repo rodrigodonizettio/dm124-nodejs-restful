@@ -1,10 +1,9 @@
 const express = require('express');
-const app = express();
+const morgan = require('morgan');
 
-app.use((req, res, next) => {
-    res.status(200).json({
-        message : 'It just works baby!'
-    });
-});
+const app = express();
+app.use(morgan('dev'));
+
+app.use('/api/tasks', require('./api/routes/tasks'));
 
 module.exports = app;
