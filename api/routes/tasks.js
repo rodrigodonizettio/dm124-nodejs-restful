@@ -17,8 +17,14 @@ router.get('/:taskId', (req, res) => {
 });
 
 router.post('/', checkAuth, (req, res) => {
+    const newTask = {
+        id: Date.now(),
+        done: req.body.done || false,
+        description: req.body.description
+    }
     res.status(201).json({
-        message: `Task has been created`
+        message: `Task has been created`,
+        newTask
     });
 });
 
