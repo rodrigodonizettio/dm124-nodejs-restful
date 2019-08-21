@@ -1,6 +1,6 @@
-# Node.js RESTful
+# DM124 - Final RESTful API with NodeJS
 
-Creating REST APIs with Node.js
+Trabalho de conclusão da disciplina DM124 (Desenvolvimento de Web Services sob a Plataforma NodeJS)
 
 ## References
 
